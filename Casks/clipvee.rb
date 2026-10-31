@@ -1,6 +1,6 @@
 cask "clipvee" do
-  version "1.0.1"
-  sha256 "718c7b8d6839d4c0308ba1bd4bec4d4d95684de87d533c026c432b2354a6bea3"
+  version "1.0.2"
+  sha256 "d9b780f6135ee05eb49f921644a02f6ff1be8ab816518c9954727ab44058a069"
 
   url "https://github.com/mzbali/ClipVee/releases/download/v#{version}/ClipVee-#{version}.dmg"
   name "ClipVee"
@@ -12,6 +12,7 @@ cask "clipvee" do
     strategy :github_latest
   end
 
+  auto_updates true
   depends_on macos: :sonoma
 
   app "ClipVee.app"
