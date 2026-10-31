@@ -5,7 +5,7 @@ cask "clipvee" do
   url "https://github.com/mzbali/ClipVee/releases/download/v#{version}/ClipVee-#{version}.dmg"
   name "ClipVee"
   desc "Windows-style clipboard history"
-  homepage "https://github.com/mzbali/ClipVee"
+  homepage "https://mzbali.github.io/ClipVee/"
 
   livecheck do
     url :url
