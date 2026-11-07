@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    name: style and audit
+    runs-on: macos-26
+    timeout-minutes: 15
+    steps:
+      - uses: Homebrew/actions/setup-homebrew@main
+      - run: brew style mzbali/tap
+      # --online downloads each cask's file, so a wrong sha256 or a dead URL fails here.
+      - run: brew audit --cask --strict --online --tap mzbali/tap
