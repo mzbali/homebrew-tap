@@ -23,9 +23,11 @@ cask "clipvee" do
   ]
 
   caveats <<~EOS
-    ClipVee is not notarised by Apple. The first time you open it, go to
+    ClipVee is not notarised by Apple, so the first time you open it macOS
+    blocks it. Close the warning without deleting ClipVee, then open
       System Settings → Privacy & Security
-    and click Open Anyway.
+    scroll down to Security, click Open Anyway and confirm. If Open Anyway
+    isn't there, open ClipVee again first.
 
     To paste for you, ClipVee needs Accessibility access. Turn it on in
       System Settings → Privacy & Security → Accessibility
