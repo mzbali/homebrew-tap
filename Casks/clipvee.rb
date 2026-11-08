@@ -1,6 +1,6 @@
 cask "clipvee" do
-  version "1.0.6"
-  sha256 "0d22613daeb808c0a544b47d03ccfdbda39e2e98f3eee1df843f9052bfe6a807"
+  version "1.0.7"
+  sha256 "546377dbed9fd6e3517f1744e011b3726b85ec13002e9e02e9e633b3ef1e8726"
 
   url "https://github.com/mzbali/ClipVee/releases/download/v#{version}/ClipVee-#{version}.dmg"
   name "ClipVee"
